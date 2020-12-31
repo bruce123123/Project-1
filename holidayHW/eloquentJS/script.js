@@ -86,6 +86,7 @@ for (i = 0; i <= 6; i++) {
 
 // Provide your solution below
 */
+/*
 for (i = 0; i <= 100; i++) {
       if (i % 3 == 0)  {
     console.log("Fizz"); 
@@ -123,6 +124,7 @@ for (i = 1; i <= 100; i++) {
 
 // Passing this string to console.log should show something like this:
 
+/*
  # # # #
 # # # # 
  # # # #
@@ -137,10 +139,53 @@ for (i = 1; i <= 100; i++) {
 // outputting a grid of the given width and height.
 
 // Provide your solution below
+/*
+function board(firstChar) {
+    function find(current, history){
+        if (current == firstChar) {
+            return history;
+    }  else if (current !== firstChar) {
+        return firstChar;
+    let firstChar = n;
+    return () => local += history;
+  }
+  
+  let wrap1 = wrapValue(1);
+  let wrap2 = wrapValue(2);
+  console.log(wrap1());
+  // → 1
+  console.log(wrap2());
+  // → 2
+
+  function findSolution(target) {
+    function find(current, history) {
+      if (current == target) {
+        return history;
+      } else if (current > target) {
+        return null;
+      } else {
+        return find(current + 5, `(${history} + 5)`) ||
+               find(current * 3, `(${history} * 3)`);
+      }
+    }
+    return find(1, "1");
+  }
+  let result = 1;
+let counter = 0;
+while (counter < 10) {
+  result = result * 2;
+  counter = counter + 1;
+}
+console.log(result);
+// → 1024
+  
+  console.log(findSolution(24));
+  // → (((1 * 3) + 5) * 3)
+
 
 
 console.log(board);
-
+*/
 
 // Chapter 3 - Functions
 
@@ -151,7 +196,15 @@ console.log(board);
 
 // Your code here.
 
+function findMin(x, y) {
+    console.log(Math.min(x, y));
+    
+}  
 
+findMin(0, 10);
+findMin(0, -10);
+
+/*
 console.log(min(0, 10));
 // → 0
 console.log(min(0, -10));
@@ -203,3 +256,4 @@ console.log(countBs("BBC"));
 // → 2
 console.log(countChar("kakkerlak", "k"));
 // → 4
+*/
