@@ -141,48 +141,23 @@ for (i = 1; i <= 100; i++) {
 // Provide your solution below
 /*
 function board(firstChar) {
+    let boardWidth = 1;
+    let boardHeight = 1;
+    for (i = 0; i <boardWidth; i++)
     function find(current, history){
         if (current == firstChar) {
             return history;
     }  else if (current !== firstChar) {
         return firstChar;
-    let firstChar = n;
+    let firstChar = ' ';
+    let history = ' ';
     return () => local += history;
   }
   
-  let wrap1 = wrapValue(1);
-  let wrap2 = wrapValue(2);
-  console.log(wrap1());
-  // → 1
-  console.log(wrap2());
-  // → 2
-
-  function findSolution(target) {
-    function find(current, history) {
-      if (current == target) {
-        return history;
-      } else if (current > target) {
-        return null;
-      } else {
-        return find(current + 5, `(${history} + 5)`) ||
-               find(current * 3, `(${history} * 3)`);
-      }
-    }
-    return find(1, "1");
-  }
-  let result = 1;
-let counter = 0;
-while (counter < 10) {
-  result = result * 2;
-  counter = counter + 1;
-}
-console.log(result);
-// → 1024
   
-  console.log(findSolution(24));
-  // → (((1 * 3) + 5) * 3)
-
-
+  
+  }
+  
 
 console.log(board);
 */
@@ -234,7 +209,7 @@ console.log(isEven(75));
 // → false
 console.log(isEven(-1));
 // → ??
-
+*/
 // ====================================== PROMPT ======================================
 // Bean counting
 // You can get the Nth character, or letter, from a string by writing "string"[N]. 
@@ -250,8 +225,24 @@ console.log(isEven(-1));
 // (rather than counting only uppercase “B” characters). Rewrite countBs to make use of this new function.
 
 // Your code here.
+function countCharB(x) {
+    // split sting into an array and count occurances of B
+    return x.split('B').length -1;       
+}  
+console.log(countCharB('BBC'));
 
 
+function countChar(x, y) {
+    // split sting into an array and count occurances of y (second variable)
+    return x.split(y).length -1;       
+}  
+
+console.log(countChar('BBC', "B"));
+console.log(countChar("kakkerlak", "k"));
+
+
+
+/*
 console.log(countBs("BBC"));
 // → 2
 console.log(countChar("kakkerlak", "k"));
