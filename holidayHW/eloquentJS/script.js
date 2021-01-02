@@ -170,6 +170,7 @@ console.log(board);
 // We can build something like that now. Write a function min that takes two arguments and returns their minimum.
 
 // Your code here.
+/*
 
 function findMin(x, y) {
     console.log(Math.min(x, y));
@@ -201,6 +202,19 @@ console.log(min(0, -10));
 // Test it on 50 and 75. See how it behaves on -1. Why? Can you think of a way to fix this?
 
 // Your code here.
+*/
+
+let n=1;
+function isEven(n) {
+for (i = 0; i < n; i++) {
+num = n - (i.length -1) == 0; 
+    retrun (num);
+} if ((num) == 0); {
+    return (true);
+} else {
+    return(false);
+}
+}
 
 
 console.log(isEven(50));
@@ -209,7 +223,8 @@ console.log(isEven(75));
 // → false
 console.log(isEven(-1));
 // → ??
-*/
+
+/*
 // ====================================== PROMPT ======================================
 // Bean counting
 // You can get the Nth character, or letter, from a string by writing "string"[N]. 
@@ -225,6 +240,8 @@ console.log(isEven(-1));
 // (rather than counting only uppercase “B” characters). Rewrite countBs to make use of this new function.
 
 // Your code here.
+/*
+
 function countCharB(x) {
     // split sting into an array and count occurances of B
     return x.split('B').length -1;       
