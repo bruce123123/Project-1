@@ -1,0 +1,19 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 450px auto;
+    grid-template-rows: 60px 250px auto 50px;
+    grid-gap: 3px; 
+    font-family: 'Helvetica Neue', Helvetica, Verdana, sans-serif;
+  }
+  
+  header {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  
+  header h1 {
+    margin: 12px 0;
+    padding: 0;
+  }
