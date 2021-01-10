@@ -13,12 +13,83 @@ body {
     /* } */
 
 .wrapper {
-  display: inline-grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  border: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 100px 100px 100px 100px;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
-  grid-auto-rows: minmax(50px, auto);
   background-color: lightgreen;
+}
+
+.wrapper {
+  display: grid;
+  border: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  background-color: lightgreen;
+}
+.wrapper {
+  display: grid;
+  border: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  background-color: lightgreen;
+}
+.wrapper {
+  display: grid;
+  border: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  background-color: lightgreen;
+}
+.wrapper {
+  display: grid;
+  border: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  background-color: lightgreen;
+}
+.wrapper {
+  display: grid;
+  border: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  background-color: lightgreen;
+}
+.wrapper {
+  display: grid;
+  border: 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  background-color: lightgreen;
+}
 }
 .one {
   grid-column: 1;
