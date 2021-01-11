@@ -1,5 +1,7 @@
-const colors=['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'lightpurple', 'salmon'];
-const cholor2=['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'lightpurple', 'salmon'];
+
+
+const pick1=[];
+const pick2=[];
 const random=['red','blue','plum', 'salmon', 'blue', 'yellow','purple','green', 'green','orange','red','yellow', 'orange', 'purple', 'plum', 'salmon'];
 
 let turn = 0;
@@ -22,7 +24,7 @@ const thirteen = document.querySelector('#thirteen');
 const fourteen = document.querySelector('#fourteen');
 const fifteen = document.querySelector('#fifteen');
 const sixteen = document.querySelector('#sixteen');
-const clearBoard = document.querySelector('clearBoard');
+const clearBoard = document.querySelector('#clearBoard');
 
 
 clearBoard.addEventListener('click', startGame)
