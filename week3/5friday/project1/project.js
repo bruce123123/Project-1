@@ -23,7 +23,8 @@ const fourteen = document.querySelector('#fourteen');
 const fifteen = document.querySelector('#fifteen');
 const sixteen = document.querySelector('#sixteen');
 const clearBoard = document.querySelector('clearBoard');
-  
+
+
 clearBoard.addEventListener('click', startGame)
     
 function startGame() {
@@ -46,22 +47,23 @@ function ClearArrays() {
     
     pick1.length = 0;
     pick2.length = 0;
-}
+};
+
 one.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
           one.classList.add('red');
           pick1.push['red']
           console.log(turn);
     } 
-      else if (pick1.length == pick2.length) 
+      else if (pick1.length == pick2.length) {
       one.classList.add('red');
       pick2.push['red'];
-      if (JSON.stringify(pick1) === JSON.stri
+      if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         return;
     } else {
         pick1.pop;
         pick2.pop;
-        //change square background back to wh
+        //change square background back to white.
     }
   }
   });
@@ -74,16 +76,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     two.classList.add('blue');
     pick2.push['blue'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  three.addEventListener("click", function() 
+  three.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         three.classList.add('plum');
         pick1.push['plum']
@@ -92,12 +94,12 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     three.classList.add('plum');
     pick2.push['plum'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
@@ -110,12 +112,12 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     four.classList.add('salmon');
     pick2.push['salmon'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
@@ -128,12 +130,12 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     five.classList.add('blue');
     pick2.push['blue'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
@@ -146,16 +148,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     six.classList.add('yellow');
     pick2.push['yellow'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  seven.addEventListener("click", function() 
+  seven.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         seven.classList.add('purple');
         pick1.push['purple']
@@ -164,16 +166,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     seven.classList.add('purple');
     pick2.push['purple'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  eight.addEventListener("click", function() 
+  eight.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         eight.classList.add('green');
         pick1.push['green']
@@ -182,12 +184,12 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     eight.classList.add('green');
     pick2.push['green'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
@@ -200,12 +202,12 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     nine.classList.add('green');
     pick2.push['green'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
@@ -218,16 +220,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     ten.classList.add('orange');
     pick2.push['orange'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  eleven.addEventListener("click", function()
+  eleven.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         eleven.classList.add('red');
         pick1.push['red']
@@ -236,16 +238,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     eleven.classList.add('red');
     pick2.push['red'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  twelve.addEventListener("click", function()
+  twelve.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         twelve.classList.add('yellow');
         pick1.push['yellow']
@@ -254,16 +256,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     twelve.classList.add('yellow');
     pick2.push['yellow'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  thirteen.addEventListener("click", function
+  thirteen.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         thirteen.classList.add('orange');
         pick1.push['orange']
@@ -272,16 +274,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     thirteen.classList.add('orange');
     pick2.push['orange'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  fourteen.addEventListener("click", function
+  fourteen.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         fourteen.classList.add('purple');
         pick1.push['purple']
@@ -290,16 +292,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     fourteen.classList.add('purple');
     pick2.push['purple'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  fifteen.addEventListener("click", function(
+  fifteen.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         fifteen.classList.add('plum');
         pick1.push['plum']
@@ -308,16 +310,16 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     fifteen.classList.add('plum');
     pick2.push['plum'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
-  sixteen.addEventListener("click", function(
+  sixteen.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         sixteen.classList.add('salmon');
         pick1.push['salmon']
@@ -326,12 +328,297 @@ one.addEventListener("click", function() {
      else if (pick1.length == pick2.length) {
     sixteen.classList.add('salmon');
     pick2.push['salmon'];
-    if (JSON.stringify(pick1) === JSON.string
+    if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
       pick1.pop;
       pick2.pop;
-      //change square background back to whit
+      //change square background back to white.
   }
   }
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
