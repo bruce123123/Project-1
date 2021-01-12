@@ -7,8 +7,9 @@ const random=['red','blue','plum', 'salmon', 'blue', 'yellow','purple','green', 
 let turn = 0;
 const red = [];
 const blue = [];
+// var index = document.getElementsByClassName('gallery__item js-gallery-item').selectedIndex;
 const wrapper = document.querySelector('#wrapper');
-const one = document.querySelector('#one');
+const one = document.getElementsByClassName('target one')
 const two = document.querySelector('#two');
 const three = document.querySelector('#three');
 const four = document.querySelector('#four');
@@ -28,8 +29,7 @@ const clearBoard = document.querySelector('#clearBoard');
 
 
 clearBoard.addEventListener("click", function(e) {
-    e.preventDefault()
-
+    e.preventDefault()    
 
 clearBoard.addEventListener('click', startGame)
     
@@ -57,7 +57,7 @@ function ClearArrays() {
     pick2.length = 0;
 };
 
-one.addEventListener("click", function() {
+one.addEventListener("click", function() { 
     if (pick1.length == pick2.length) {
           one.classList.remove('lightgrey');
           one.classList.add('red');

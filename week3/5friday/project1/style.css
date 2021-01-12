@@ -25,7 +25,7 @@ body {
   
 }
 
-#one {
+.one {
   grid-column: 1;
   grid-row: 1;
   background-color: lightgrey;
