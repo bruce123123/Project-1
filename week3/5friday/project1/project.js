@@ -27,14 +27,20 @@ const sixteen = document.querySelector('#sixteen');
 const clearBoard = document.querySelector('#clearBoard');
 
 
+clearBoard.addEventListener("click", function(e) {
+    e.preventDefault()
+
+
 clearBoard.addEventListener('click', startGame)
     
 function startGame() {
     pick1.length = 0;
     pick2.length = 0;
     console.log('new game');
-}
 
+    }
+
+});
 
 // document.querySelector('#reset').addEventListener('click', startGame);
   // function startGame() {
@@ -52,48 +58,59 @@ function ClearArrays() {
 };
 
 one.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
           one.classList.add('red');
-          pick1.push['red']
-          console.log(turn);
+          pick1.push('red');
+          console.log('1 pick1 ' + pick1);
+          console.log('1 pcik2 ' + pick2);
     } 
-      else if (pick1.length == pick2.length) {
+      else if (pick1.length != pick2.length) {
       one.classList.add('red');
-      pick2.push['red'];
+      pick2.push('red');
       if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         return;
     } else {
-        pick1.pop;
-        pick2.pop;
+        pick1.pop();
+        pick2.pop();
+        one.classList.add('lightgrey');
+        console.log('2 pick1 ' + pick1);
+        console.log('2 pick2 ' + pick2);
         //change square background back to white.
     }
   }
   });
   two.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         two.classList.add('blue');
-        pick1.push['blue']
-        console.log(turn);
+        pick1.push('blue');
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
+        
+        
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length !== pick2.length) {
     two.classList.add('blue');
-    pick2.push['blue'];
+    pick2.push('blue');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
       return;
   } else {
-      pick1.pop;
-      pick2.pop;
+      pick1.pop();
+      pick2.pop();
+      one.classList.add('lightgrey');
+        console.log('2 pick1 ' + pick1);
+        console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
   });
   three.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         three.classList.add('plum');
         pick1.push['plum']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     three.classList.add('plum');
     pick2.push['plum'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -101,17 +118,21 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      three.classList.add('lightgrey');
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
   });
   four.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         four.classList.add('salmon');
         pick1.push['salmon']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     four.classList.add('salmon');
     pick2.push['salmon'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -119,17 +140,22 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      four.classList.add('lightgrey');
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
+
       //change square background back to white.
   }
   }
   });
   five.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         five.classList.add('blue');
         pick1.push['blue']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     five.classList.add('blue');
     pick2.push['blue'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -137,6 +163,10 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      five.classList.add('lightgrey');
+      cconsole.log('2 pick1 ' + pick1);
+      cconsole.log('2 pick2 ' + pick2);
+      
       //change square background back to white.
   }
   }
@@ -145,7 +175,8 @@ one.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         six.classList.add('yellow');
         pick1.push['yellow']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     six.classList.add('yellow');
@@ -155,6 +186,10 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      six.classList.add('lightgrey');
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
+
       //change square background back to white.
   }
   }
@@ -163,7 +198,8 @@ one.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         seven.classList.add('purple');
         pick1.push['purple']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     seven.classList.add('purple');
@@ -173,6 +209,8 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
@@ -181,7 +219,8 @@ one.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         eight.classList.add('green');
         pick1.push['green']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     eight.classList.add('green');
@@ -191,6 +230,8 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
@@ -199,7 +240,8 @@ one.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         nine.classList.add('green');
         pick1.push['green']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     nine.classList.add('green');
@@ -209,6 +251,9 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
+
       //change square background back to white.
   }
   }
@@ -217,7 +262,8 @@ one.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         ten.classList.add('orange');
         pick1.push['orange']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     ten.classList.add('orange');
@@ -227,6 +273,9 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
+
       //change square background back to white.
   }
   }
@@ -235,7 +284,8 @@ one.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         eleven.classList.add('red');
         pick1.push['red']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     eleven.classList.add('red');
@@ -245,17 +295,20 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
   });
   twelve.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         twelve.classList.add('yellow');
         pick1.push['yellow']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     twelve.classList.add('yellow');
     pick2.push['yellow'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -263,17 +316,20 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
   });
   thirteen.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         thirteen.classList.add('orange');
         pick1.push['orange']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     thirteen.classList.add('orange');
     pick2.push['orange'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -281,17 +337,20 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
   });
   fourteen.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         fourteen.classList.add('purple');
         pick1.push['purple']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     fourteen.classList.add('purple');
     pick2.push['purple'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -299,17 +358,20 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
   });
   fifteen.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         fifteen.classList.add('plum');
         pick1.push['plum']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     fifteen.classList.add('plum');
     pick2.push['plum'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -317,17 +379,20 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
   });
   sixteen.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         sixteen.classList.add('salmon');
         pick1.push['salmon']
-        console.log(turn);
+        console.log('1 pick1 ' + pick1);
+        console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     sixteen.classList.add('salmon');
     pick2.push['salmon'];
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -335,6 +400,8 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      console.log('2 pick1 ' + pick1);
+      console.log('2 pick2 ' + pick2);
       //change square background back to white.
   }
   }
