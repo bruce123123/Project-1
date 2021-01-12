@@ -279,13 +279,13 @@ one.addEventListener("click", function() {
   ten.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         ten.classList.add('orange');
-        pick1.push['orange']
+        pick1.push('orange');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     ten.classList.add('orange');
-    pick2.push['orange'];
+    pick2.push('orange');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         console.log('same pick1 ' + pick1);
         console.log('same pick2 ' + pick2);
@@ -293,6 +293,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      ten.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
 
@@ -303,13 +304,13 @@ one.addEventListener("click", function() {
   eleven.addEventListener("click", function() {
     if (pick1.length !== pick2.length) {
         eleven.classList.add('red');
-        pick1.push['red']
+        pick1.push('red');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length == pick2.length) {
     eleven.classList.add('red');
-    pick2.push['red'];
+    pick2.push('red');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         console.log('same pick1 ' + pick1);
         console.log('same pick2 ' + pick2);
@@ -318,6 +319,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      eleven.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
       //change square background back to white.
@@ -327,13 +329,13 @@ one.addEventListener("click", function() {
   twelve.addEventListener("click", function() {
     if (pick1.length == pick2.length) {
         twelve.classList.add('yellow');
-        pick1.push['yellow']
+        pick1.push('yellow');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length != pick2.length) {
     twelve.classList.add('yellow');
-    pick2.push['yellow'];
+    pick2.push('yellow');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         console.log('same pick1 ' + pick1);
         console.log('same pick2 ' + pick2);
@@ -341,6 +343,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      twelve.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
       //change square background back to white.
@@ -350,13 +353,13 @@ one.addEventListener("click", function() {
   thirteen.addEventListener("click", function() {
     if (pick1.length == pick2.length) {
         thirteen.classList.add('orange');
-        pick1.push['orange']
+        pick1.push('orange');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length != pick2.length) {
     thirteen.classList.add('orange');
-    pick2.push['orange'];
+    pick2.push('orange');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         console.log('same pick1 ' + pick1);
         console.log('same pick2 ' + pick2);
@@ -364,6 +367,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      thirteen.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
       //change square background back to white.
@@ -373,13 +377,13 @@ one.addEventListener("click", function() {
   fourteen.addEventListener("click", function() {
     if (pick1.length == pick2.length) {
         fourteen.classList.add('purple');
-        pick1.push['purple']
+        pick1.push('purple');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length != pick2.length) {
     fourteen.classList.add('purple');
-    pick2.push['purple'];
+    pick2.push('purple');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         console.log('same pick1 ' + pick1);
         console.log('same pick2 ' + pick2);
@@ -387,6 +391,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      fourteen.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
       //change square background back to white.
@@ -396,13 +401,13 @@ one.addEventListener("click", function() {
   fifteen.addEventListener("click", function() {
     if (pick1.length == pick2.length) {
         fifteen.classList.add('plum');
-        pick1.push['plum']
+        pick1.push('plum');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length != pick2.length) {
     fifteen.classList.add('plum');
-    pick2.push['plum'];
+    pick2.push('plum');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         console.log('same pick1 ' + pick1);
         console.log('same pick2 ' + pick2);
@@ -410,6 +415,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      fifteen.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
       //change square background back to white.
@@ -419,13 +425,13 @@ one.addEventListener("click", function() {
   sixteen.addEventListener("click", function() {
     if (pick1.length == pick2.length) {
         sixteen.classList.add('salmon');
-        pick1.push['salmon']
+        pick1.push('salmon');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
      else if (pick1.length != pick2.length) {
     sixteen.classList.add('salmon');
-    pick2.push['salmon'];
+    pick2.push('salmon');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
         console.log('same pick1 ' + pick1);
         console.log('same pick2 ' + pick2);
@@ -433,6 +439,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop;
       pick2.pop;
+      sixteen.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
       //change square background back to white.
