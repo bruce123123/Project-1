@@ -82,17 +82,18 @@ one.addEventListener("click", function() {
         pick2.pop();
         setTimeout(() => {
         // cleanUp(() => {
+            one.classList.remove('red');
+            one.classList.add('lightgrey');
             console.log('2 wrong pick1 ' + pick1);
             console.log('2 wrong pick2 ' + pick2);
-         }, 1000);
-         one.classList.remove('red');
-         one.classList.add('lightgrey');
+         }, 500);
+        
+        
         return;
         
         //change square background back to white.
         }
     }
-  }
   });
   two.addEventListener("click", function() {
     if (pick1.length == pick2.length) {
@@ -111,9 +112,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
-      one.classList.add('lightgrey');
+      setTimeout(() => {
+      two.classList.remove('blue');
+      two.classList.add('lightgrey');
         console.log('2 wrong pick1 ' + pick1);
         console.log('2 wrong pick2 ' + pick2);
+      }, 500);
       //change square background back to white.
   }
   }
@@ -135,9 +139,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      three.classList.remove('blue');
       three.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+          console.log('2 wrong pick1 ' + pick1);
+          console.log('2 wrong pick2 ' + pick2);
+        }, 500);
       //change square background back to white.
   }
   }
@@ -159,9 +166,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      four.classList.remove('blue');
       four.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
+          }, 500);
       //change square background back to white.
   }
   }
@@ -183,9 +193,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
-      five.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+      setTimeout(() => {
+        five.classList.remove('blue');
+        five.classList.add('lightgrey');
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+            }, 500);
       
       //change square background back to white.
   }
@@ -208,9 +221,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      six.classList.remove('yellow');
       six.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
+            }, 500);
 
       //change square background back to white.
   }
@@ -233,9 +249,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      seven.classList.remove('purple');
       seven.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
+              }, 500);
       //change square background back to white.
   }
   }
@@ -257,9 +276,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      eight.classList.remove('green');
       eight.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                }, 500);
       //change square background back to white.
   }
   }
@@ -281,9 +303,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      nine.classList.remove('green');
       nine.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
+                  }, 500);
 
       //change square background back to white.
   }
@@ -306,10 +331,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
-      ten.classList.remove('orange')
+      setTimeout(() => {
+      ten.classList.remove('orange');
       ten.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                    }, 500);
 
       //change square background back to white.
   }
@@ -333,9 +360,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      eleven.classList.remove('red');
       eleven.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                    }, 500);
       //change square background back to white.
   }
   }
