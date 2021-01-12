@@ -8,25 +8,25 @@ let turn = 0;
 const red = [];
 const blue = [];
 // var index = document.getElementsByClassName('gallery__item js-gallery-item').selectedIndex;
-const wrapper = document.querySelector('#wrapper');
-const one = document.getElementsByClassName('target one')
-const two = document.querySelector('#two');
-const three = document.querySelector('#three');
-const four = document.querySelector('#four');
-const five = document.querySelector('#five');
-const six = document.querySelector('#six');
-const seven = document.querySelector('#seven');
-const eight = document.querySelector('#eight');
-const nine = document.querySelector('#nine');
-const ten = document.querySelector('#ten');
-const eleven = document.querySelector('#eleven');
-const twelve = document.querySelector('#twelve');
-const thirteen = document.querySelector('#thirteen');
-const fourteen = document.querySelector('#fourteen');
-const fifteen = document.querySelector('#fifteen');
-const sixteen = document.querySelector('#sixteen');
+const wrapper = document.querySelector('.wrapper');
+const one = document.querySelector('.one')
+const two = document.querySelector('.two');
+const three = document.querySelector('.three');
+const four = document.querySelector('.four');
+const five = document.querySelector('.five');
+const six = document.querySelector('.six');
+const seven = document.querySelector('.seven');
+const eight = document.querySelector('.eight');
+const nine = document.querySelector('.nine');
+const ten = document.querySelector('.ten');
+const eleven = document.querySelector('.eleven');
+const twelve = document.querySelector('.twelve');
+const thirteen = document.querySelector('.thirteen');
+const fourteen = document.querySelector('.fourteen');
+const fifteen = document.querySelector('.fifteen');
+const sixteen = document.querySelector('.sixteen');
 const clearBoard = document.querySelector('#clearBoard');
-
+const startGame = document.querySelector('.reset')
 
 clearBoard.addEventListener("click", function(e) {
     e.preventDefault()    
@@ -51,11 +51,15 @@ function startGame() {
 
 //setTimeout
 
-function ClearArrays() {
-    
-    pick1.length = 0;
-    pick2.length = 0;
-};
+
+function timer() {
+  timers = setTimeout(function(){ alert("Hello") }, 1000);
+}
+
+function myStopFunction() {
+  clearTimeout(myVar);
+} 
+
 
 one.addEventListener("click", function() { 
     if (pick1.length == pick2.length) {
@@ -76,12 +80,17 @@ one.addEventListener("click", function() {
     } else {
         pick1.pop();
         pick2.pop();
-
-        one.classList.remove('red');
-        one.classList.add('lightgrey');
-        console.log('2 wrong pick1 ' + pick1);
-        console.log('2 wrong pick2 ' + pick2);
+        setTimeout(() => {
+        // cleanUp(() => {
+            console.log('2 wrong pick1 ' + pick1);
+            console.log('2 wrong pick2 ' + pick2);
+         }, 1000);
+         one.classList.remove('red');
+         one.classList.add('lightgrey');
+        return;
+        
         //change square background back to white.
+        }
     }
   }
   });
@@ -281,13 +290,13 @@ one.addEventListener("click", function() {
   }
   });
   ten.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         ten.classList.add('orange');
         pick1.push('orange');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     ten.classList.add('orange');
     pick2.push('orange');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -297,6 +306,7 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      ten.classList.remove('orange')
       ten.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
