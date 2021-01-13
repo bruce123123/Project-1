@@ -4,6 +4,7 @@ const pick1=[];
 const pick2=[];
 const random=['red','blue','plum', 'salmon', 'blue', 'yellow','purple','green', 'green','orange','red','yellow', 'orange', 'purple', 'plum', 'salmon'];
 
+
 let turn = 0;
 const red = [];
 const blue = [];
@@ -25,40 +26,39 @@ const thirteen = document.querySelector('.thirteen');
 const fourteen = document.querySelector('.fourteen');
 const fifteen = document.querySelector('.fifteen');
 const sixteen = document.querySelector('.sixteen');
-const clearBoard = document.querySelector('#clearBoard');
-const startGame = document.querySelector('.reset')
+const startGame = document.querySelector('#learBoard');
+const clearBoard1 = document.querySelector('#clearBoard')
 
-clearBoard.addEventListener("click", function(e) {
-    e.preventDefault()    
 
-clearBoard.addEventListener('click', startGame)
-    
-function startGame() {
-    pick1.length = 0;
-    pick2.length = 0;
+clearBoard1.addEventListener("click", function()  {
     console.log('new game');
-
-    }
+    console.log('pick1 ' + pick1);
+    console.log('pcik2 ' +pick2); 
+    pick1.splice(0, pick1.length)
+    pick2.splice(0, pick2.length)
+    console.log('pick1 ' + pick1);
+    console.log('pcik2 ' +pick2);  
+    one.classList.remove('red'), one.classList.add('lightgrey');
+    two.classList.remove('blue'), two.classList.add('lightgrey');
+    three.classList.remove('plum'), three.classList.add('lightgrey');
+    four.classList.remove('salmon'), four.classList.add('lightgrey');
+    five.classList.remove('blue'), five.classList.add('lightgrey');
+    six.classList.remove('yellow'), six.classList.add('lightgrey');
+    seven.classList.remove('purple'), seven.classList.add('lightgrey');
+    eight.classList.remove('green'), eight.classList.add('lightgrey');
+    nine.classList.remove('green'), nine.classList.add('lightgrey');
+    ten.classList.remove('orange'), ten.classList.add('lightgrey');
+    eleven.classList.remove('red'), eleven.classList.add('lightgrey');
+    twelve.classList.remove('yellow'), twelve.classList.add('lightgrey');
+    thirteen.classList.remove('orange'), thirteen.classList.add('lightgrey');
+    fourteen.classList.remove('purple'), fourteen.classList.add('lightgrey');
+    fifteen.classList.remove('plum'), fifteen.classList.add('lightgrey');
+    sixteen.classList.remove('salmon'), sixteen.classList.add('lightgrey');
 
 });
 
-// document.querySelector('#reset').addEventListener('click', startGame);
-  // function startGame() {
-    // pick1.length = 0;
-    // pick2.length = 0;
-// };
 
 
-//setTimeout
-
-
-function timer() {
-  timers = setTimeout(function(){ alert("Hello") }, 1000);
-}
-
-function myStopFunction() {
-  clearTimeout(myVar);
-} 
 
 
 one.addEventListener("click", function() { 
@@ -140,7 +140,7 @@ one.addEventListener("click", function() {
       pick1.pop();
       pick2.pop();
       setTimeout(() => {
-      three.classList.remove('blue');
+      three.classList.remove('plum');
       three.classList.add('lightgrey');
           console.log('2 wrong pick1 ' + pick1);
           console.log('2 wrong pick2 ' + pick2);
@@ -287,13 +287,13 @@ one.addEventListener("click", function() {
   }
   });
   nine.addEventListener("click", function() {
-    if (pick1.length !== pick2.length) {
+    if (pick1.length == pick2.length) {
         nine.classList.add('green');
         pick1.push('green');
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length == pick2.length) {
+     else if (pick1.length != pick2.length) {
     nine.classList.add('green');
     pick2.push('green');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -349,7 +349,7 @@ one.addEventListener("click", function() {
         console.log('1 pick1 ' + pick1);
         console.log('1 pcik2 ' + pick2);
     } 
-     else if (pick1.length !== pick2.length) {
+     else if (pick1.length != pick2.length) {
     eleven.classList.add('red');
     pick2.push('red');
     if (JSON.stringify(pick1) === JSON.stringify(pick2)) {
@@ -387,9 +387,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      twelve.classList.remove('yellow');
       twelve.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                    }, 500);
       //change square background back to white.
   }
   }
@@ -411,9 +414,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      thirteen.classList.remove('orange');
       thirteen.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                    }, 500);
       //change square background back to white.
   }
   }
@@ -435,9 +441,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      fourteen.classList.remove('purple');
       fourteen.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                    }, 500);
       //change square background back to white.
   }
   }
@@ -459,9 +468,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      fifteen.classList.remove('plum');
       fifteen.classList.add('lightgrey');
-      console.log('2 wrong pick1 ' + pick1);
-      console.log('2 wrong pick2 ' + pick2);
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                    }, 500);
       //change square background back to white.
   }
   }
@@ -483,6 +495,12 @@ one.addEventListener("click", function() {
   } else {
       pick1.pop();
       pick2.pop();
+      setTimeout(() => {
+      sixteen.classList.remove('salmon');
+      sixteen.classList.add('lightgrey');
+        console.log('2 wrong pick1 ' + pick1);
+        console.log('2 wrong pick2 ' + pick2);
+                    }, 500);
       sixteen.classList.add('lightgrey');
       console.log('2 wrong pick1 ' + pick1);
       console.log('2 wrong pick2 ' + pick2);
