@@ -1,5 +1,5 @@
 
-
+const lastChoice=[];
 const pick1=[];
 const pick2=[];
 const random=['red','blue','plum', 'salmon', 'blue', 'yellow','purple','green', 'green','orange','red','yellow', 'orange', 'purple', 'plum', 'salmon'];

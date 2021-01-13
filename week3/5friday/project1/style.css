@@ -135,7 +135,6 @@ body {
 
 .button {
   background-color: cornflowerblue;
-  justify-content: center;
-  align-content: center;
+  margin: 0 auto;
 
   }
